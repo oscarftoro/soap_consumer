@@ -5,14 +5,14 @@ An example of an erlang application consuming a soap resource using detergent.
 1. Fetch Dependencies
 =====================
 
-``bash
+``
 make deps
 ``
 
 2. Compile
 ==========
 
-``bash
+``
 make app
 ``
 
@@ -26,7 +26,7 @@ make run
 =============
 On the erlang terminal run:
 
-``erlang
+``
 soap_consumer:get_location().
 ``
 
@@ -36,7 +36,7 @@ soap_consumer:get_location("255.255.255.255")
 5. Parse
 ========
 You can parse your result as following:
-``erlang
+``
 sc_parser:location(Result).
 ``
 
