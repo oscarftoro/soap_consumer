@@ -1,6 +1,6 @@
 ebin
 deps
 WORKING
-logs
+log
 error_logs/debug.log
 
