@@ -1,0 +1,18 @@
+{application, soap_consumer, [
+	{description, ""},
+	{vsn, "0.1.0"},
+	{id, "git"},
+	{modules, []},
+	{registered, []},
+	{applications, [
+		kernel,
+		stdlib,
+                detergent,
+                erlsom,
+                lager,
+                sync
+                
+	]},
+	{mod, {soap_consumer_app, []}},
+	{env, []}
+]}.

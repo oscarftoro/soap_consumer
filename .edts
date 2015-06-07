@@ -1,0 +1,5 @@
+:name "soap_consumer"
+:node-sname "soap_consumer"
+:lib-dirs '("deps" "test")
+:app-include-dirs '("include")
+
