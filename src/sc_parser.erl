@@ -3,5 +3,5 @@
 
 location({ok,undefined,[{_,_,{_,[],0,Loc,Message,undefined,undefined}}]})->
     {error,Loc,Message};
-location({ok,undefined,[{_,_,{_,[],1,Loc,"Success",Land,Initials}}]}) ->
-    {success,Loc,Land,Initials}.
+location({ok,undefined,[{_,_,{_,[],1,Loc,"Success",Country,Initials}}]}) ->
+    {success,Loc,Country,Initials}.

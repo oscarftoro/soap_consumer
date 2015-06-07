@@ -1,5 +1,5 @@
 -module(soap_consumer).
--export([get_location/1,get_location/0,validate_email/1]).
+-export([get_location/1,get_location/0]).
 
 %% get location by context
 get_location() -> 
@@ -11,9 +11,7 @@ get_location() ->
 get_location(IP) ->
     detergent:call("http://www.webservicex.net/geoipservice.asmx?WSDL",
 		   "GetGeoIP",[IP]).
--spec validate_email(string()) -> {error,timeout} | {ok,undefined,[{'p:IsValidEmailResponse',[],atom()}]}.
 
-validate_email(Email) ->
-    detergent:call("http://www.webservicex.net/ValidateEmail.asmx?WSDL",
-		   "IsValidEmail",[Email]). 
+
+
     
